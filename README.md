@@ -6,6 +6,14 @@ A practical introduction to IT support by Steven Powell: the course I wish I had
 
 [Open the course](https://caeled.neocities.org/learn/)
 
+## Easy download — no Git needed
+
+[Download the ready-to-use course ZIP](https://github.com/caeled/nerd-heaven-tech-support/releases/latest/download/Nerd-Heaven-Course.zip)
+
+Right-click the ZIP, choose **Extract All**, then open **START-HERE.html** in the extracted Nerd-Heaven folder. You can copy the whole folder to a USB stick. The lessons and practice benches work immediately without internet.
+
+On Windows, **Download-Media.bat** adds optional publisher recordings beside the course. Choose four videos (~3.3 GB), the full collection (~3.7 GB), the two-hour starting route (~195 MB), or reading material only. It needs internet during the download; saved recordings then play offline. No administrator account or extra installation is needed on current Windows 10/11.
+
 ## Start learning
 
 Download this repository as a ZIP, extract it, and open `index.html` in a current browser. Keep `app.js`, `course.js` and `style.css` beside the index. You can also clone the repository.
@@ -32,7 +40,7 @@ Browser progress does not automatically travel with a USB stick. Use **Save prog
 
 `discovery.html` links to fourteen substantial recordings from Google DeepMind, MIT OpenCourseWare and ESO: robotics, neural networks, neuroscience, astronomy, protein folding, computing, ecology and cybersecurity. Older recordings are dated so their research context remains clear.
 
-Large recordings are not stored in Git. The separate offline USB edition contains about eleven hours of media. See [OFFLINE-MEDIA.md](OFFLINE-MEDIA.md).
+Large recordings are not stored in Git. The optional download helper assembles about eleven hours of media. See [OFFLINE-MEDIA.md](OFFLINE-MEDIA.md).
 
 ## Library
 

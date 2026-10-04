@@ -1,9 +1,17 @@
-# Offline media
+# Optional offline recordings
 
-The course works offline after downloading and extracting this repository. Its public Discovery Room links to publisher pages and needs internet.
+The course works without downloading recordings. To add them on Windows:
 
-For personal offline listening, use the publishers' download links: DeepMind supplies podcast MP3s through its public RSS feed; MIT OCW links to Archive video downloads; ESO supplies the full film and English subtitles. Preserve credits and applicable terms.
+1. Extract the course ZIP; do not run from inside the ZIP viewer.
+2. Put the whole extracted folder on the USB or drive where recordings should stay.
+3. Connect to the internet and double-click Download-Media.bat.
+4. Choose videos (~3.3 GB), everything (~3.7 GB), the two-hour starter (~195 MB), or transcripts/captions (<1 MB).
+5. Open index.html, then Discovery Room, then Offline recordings. Reopen the page after new downloads.
 
-`offline-media-sources.json` records the URLs, filenames, sizes and checksums of the October 3, 2026 USB edition. Publisher downloads and podcast insertions may change. The manifest identifies that particular collection.
+Completed files are kept. Interrupted downloads remain as .part files and can resume when the publisher supports it. Enough free space is checked first. Static video and reading files must match the original collection's SHA-256 hashes. Podcast audio may change due to advertisements; changed MP3s are identified and a warning is shown. Failed downloads do not remove successes. If a publisher stops supporting a download, use its official source link.
 
-The separate USB edition is about 3.70 GB and includes local players for fourteen recordings, about 11 hours 16 minutes, plus captions/transcripts where available. This repository contains the online companion: downloaded recordings can be opened in a media player; placing them beside this page does not automatically create local players.
+The helper uses Windows PowerShell and curl.exe, supplied with current Windows 10/11. Its batch file applies an execution-policy override only to that child PowerShell process; it does not change the computer's persistent policy or need administrator rights. Managed computers may prohibit scripts; in that case use the official publisher links or ask the device administrator. The HTML course works on other systems; the batch helper is Windows-only.
+
+Sources: DeepMind's public podcast feed, MIT OCW publisher-linked Archive downloads, and ESO's film/subtitles. URLs and original hashes are recorded in offline-media-sources.json. Credits and third-party license terms are retained in the Discovery Room. Do not rehost the downloaded podcasts publicly without permission.
+
+Browser subtitle data is generated on the learner’s device from downloaded publisher SRT files. The public ZIP contains empty subtitle placeholders, not publisher subtitle text.
